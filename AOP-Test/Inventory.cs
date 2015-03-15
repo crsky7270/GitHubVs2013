@@ -12,12 +12,23 @@ namespace AOP_Test
          inventory["item200"] = 200;
       }
 
+      /// <summary>
+      /// 检查库存
+      /// </summary>
+      /// <param name="product"></param>
+      /// <param name="quantity"></param>
+      /// <returns></returns>
       public bool CheckOut(string product, int quantity)
       {
          int qty = GetQuantity(product);
          return qty > quantity;
       }
 
+      /// <summary>
+      /// 获取库存数量
+      /// </summary>
+      /// <param name="product"></param>
+      /// <returns></returns>
       public int GetQuantity(string product)
       {
          int qty = 0;
