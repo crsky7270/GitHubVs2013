@@ -48,6 +48,9 @@ namespace AOP_Test
          //}
       }
 
+      /// <summary>
+      /// 返回产品名
+      /// </summary>
       public string ProductName
       {
          get { return product; }
