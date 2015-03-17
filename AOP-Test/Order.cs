@@ -17,6 +17,9 @@ namespace AOP_Test
          this.orderId = orderId;
       }
 
+      /// <summary>
+      /// 提交方法
+      /// </summary>
       public void Submit()
       {
          Inventory inventory = new Inventory();
